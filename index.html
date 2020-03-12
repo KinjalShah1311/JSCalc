@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Calculator Project</title>
+    
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class = "calculator">
+          <div class="row">
+          <input type = "text" class="calc-numbers-history" id="history" value="" disabled/>
+        </div>
+        <div class="row">
+          <input type = "text" class="calc-numbers" id="answer" value="0" disabled/>
+        </div>
+        <div class="calculator-buttons">
+          <button class="btn orange operator" onclick="operatorBtn('exp')">e</button>
+          <button class="btn orange operator" onclick="operatorBtn('sqrt')">&radic;</button>
+          <button class="btn orange operator" onclick="clearExpression('c')">C</button>
+          <button class="btn orange operator" onclick="clearExpression('ac')">AC</button>
+          <button class="btn orange operator" onclick="calculate()">=</button>
+
+          <button class="btn orange operator" onclick="bracketBtn('pi')">&#960;</button>
+          <button class="btn orange operator" onclick="operatorBtn('sin')">sin</button>
+          <button class="btn orange operator" onclick="operatorBtn('cos')">cos</button>
+          <button class="btn orange operator" onclick="operatorBtn('tan')">tan</button>
+          <button class="btn orange operator" onclick="operatorBtn('/')">/</button>
+
+          <button class="btn orange operator" onclick="operatorBtn('square')">x&#50;</button>
+          <button class="btn" onclick="numericBtn('7')">7</button>
+          <button class="btn" onclick="numericBtn('8')">8</button>
+          <button class="btn" onclick="numericBtn('9')">9</button>
+          <button class="btn orange operator" onclick="operatorBtn('*')">X</button>
+
+          <button class="btn orange operator" onclick="operatorBtn('log')">log</button>
+          <button class="btn" onclick="numericBtn('4')">4</button>
+          <button class="btn" onclick="numericBtn('5')">5</button>
+          <button class="btn" onclick="numericBtn('6')">6</button>
+          <button class="btn orange operator" onclick="operatorBtn('-')">-</button>
+
+          <button class="btn orange operator" onclick="bracketBtn('(')">(</button>
+          <button class="btn" onclick="numericBtn('1')">1</button>
+          <button class="btn" onclick="numericBtn('2')">2</button>
+          <button class="btn" onclick="numericBtn('3')">3</button>
+          <button class="btn orange operator" onclick="operatorBtn('+')">+</button>
+
+          <button class="btn orange operator" onclick="bracketBtn(')')">)</button>
+          <button class="btn orange operator" onclick="changeSign('')">&#177;</button>
+          <button class="btn" onclick="numericBtn('0')">0</button>
+          <button class="btn orange operator" onclick="numericBtn('.')">&#46;</button>
+          <button class="btn orange operator" onclick="operatorBtn('%')">%</button>
+        </div>
+    </div>
+    </div>
+    <script type="text/javascript" src="calculator.js"></script>
+</body>
+</html>

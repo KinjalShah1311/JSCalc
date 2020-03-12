@@ -1,0 +1,98 @@
+/*
+input {
+  padding:15px;
+  margin:7px;
+  width: 55px;
+  font-size: 1.5em;
+}
+
+#answer{
+  display:flex;
+  justify-content: right;
+  text-align: right;
+  flex-wrap: wrap;  
+  font-size: 1.5em;
+}
+
+#history{
+  display:flex;
+  justify-content: right;
+  text-align: right;
+  flex-wrap: wrap;
+  font-size: 1em;
+}
+.calculator{
+  display: flex-row;
+  min-width: 20%;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 50%;
+  min-width: 20%;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+}
+*/
+@import url('https://fonts.googleapis.com/css?family=Space+Mono');
+
+/* quick reset so all our padding is the right size */
+* {
+  box-sizing: border-box;
+}
+
+.calculator{
+    max-width:500px;
+    background: #eee;
+}
+.calculator-buttons{
+    display:grid;
+    grid-template-columns: repeat(5,1fr);
+    border:0;
+}
+.calc-numbers{
+    font-family: 'Space Mono', serif;
+    background: black;
+    color: white;
+    font-size: 2em;
+    border:0;
+    padding: 0.3em;
+    text-align: right;
+    width: 100%;
+    height: 100px;
+}
+.calc-numbers-history{
+    font-family: 'Space Mono', serif;
+    background: gray;
+    color: black;
+    font-size: 1em;
+    border:0;
+    padding: 0.3em;
+    text-align: right;
+    width: 100%;
+    height: 80px;
+}
+.span-2{
+    grid-column: span 2;
+}
+.span-3{
+    grid-column: span 3;
+}
+.btn{
+    font-size:1em;
+    height: 65px;
+    border:1px solid black;
+    font-weight: bold;
+}
+.btn:hover{
+    background: #fff;
+}
+.orange{
+    background-color:orange;
+}
